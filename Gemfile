@@ -55,6 +55,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'cancancan'
 gem 'devise'
 gem 'devise-i18n'
+gem 'devise-jwt'
 gem 'rails_admin', '~> 1.3'
 gem 'rails_admin-i18n'
 gem 'rails_admin_tag_list'
