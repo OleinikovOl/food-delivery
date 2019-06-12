@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   get 'kitchens', to: 'kitchens#show'
+
   get 'menu/sections', to: 'menu#sections'
+  get 'menu/items', to: 'menu#items'
 end

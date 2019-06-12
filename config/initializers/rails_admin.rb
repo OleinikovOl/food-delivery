@@ -38,4 +38,16 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+  
+  config.model Item do
+    edit do
+      field :name
+      field :comment
+      field :price
+      field :order
+      field :features
+      field :weight
+      field :thumb_image
+    end
+  end
 end
