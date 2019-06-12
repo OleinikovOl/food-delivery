@@ -10,6 +10,7 @@ class CreateItems < ActiveRecord::Migration[5.0]
       t.text :features, array: true, default: []
       t.integer :weight
       t.string :thumb_image
+      t.text :images, array: true, default: []
       t.timestamps
     end
   end

@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20190612074435) do
     t.text     "features",    default: [],              array: true
     t.integer  "weight"
     t.string   "thumb_image"
+    t.text     "images",      default: [],              array: true
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
     t.index ["kitchen_id"], name: "index_items_on_kitchen_id", using: :btree

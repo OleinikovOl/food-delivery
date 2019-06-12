@@ -10,7 +10,7 @@ class MenuController < ApplicationController
     render json: @sections        
   end
 
-  def items
+  def itemsList
     @kitchen_id = params[:kitchen]
     @section_id = params[:section]
     
@@ -26,4 +26,13 @@ class MenuController < ApplicationController
 
     render json: @items
   end
+
+  def item
+    @item_id = params[:id]
+    
+    @item = Item.find_by(id: @item_id)
+    
+    render json: @item
+  end
+
 end

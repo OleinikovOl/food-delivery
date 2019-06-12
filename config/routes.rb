@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   get 'kitchens', to: 'kitchens#show'
 
   get 'menu/sections', to: 'menu#sections'
-  get 'menu/items', to: 'menu#items'
+  get 'menu/items', to: 'menu#itemsList'
+  get 'menu/item', to: 'menu#item' 
 end
